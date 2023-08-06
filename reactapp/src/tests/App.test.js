@@ -1,6 +1,6 @@
 import React from "react";
 import App from "../App";
-import { shallow, mount } from "enzyme";
+import {  mount } from "enzyme";
 
 
 var wrapper;
@@ -28,7 +28,7 @@ describe('Testing App Component', () => {
     });
 
     test('testcase4', () => {
-        const wrapper = mount(<App />);
+        wrapper = mount(<App />);
         wrapper.find('button').simulate('click')
         wrapper.find('button').forEach(node => {
             expect(node.simulate('click'));
@@ -39,7 +39,7 @@ describe('Testing App Component', () => {
     });
 
     test('testcase5', () => {
-        const wrapper = mount(<App />);
+        wrapper = mount(<App />);
         wrapper.find('button').simulate('click')
         wrapper.find('button').forEach(node => {
             expect(node.simulate('click'));
