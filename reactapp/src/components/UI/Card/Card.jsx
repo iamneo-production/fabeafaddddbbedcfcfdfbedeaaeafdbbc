@@ -20,7 +20,9 @@ if (clicked === answer)
 correctAnswerMarkUpdate(attempt + 1)
 }
 // Styles for the button
-const norm = "bg-red-300 px-2 py-1 rounded hover:bg-orange-400"const disable = "bg-orange-300 px-2 py-1 rounded disabled:opacity-50"return (
+const norm = "bg-red-300 px-2 py-1 rounded hover:bg-orange-400"
+const disable = "bg-orange-300 px-2 py-1 rounded disabled:opacity-50"
+return (
 <div>
 <h4 className="pt-3 pb-1">{question}</h4>
 <div className="flex space-x-2">
